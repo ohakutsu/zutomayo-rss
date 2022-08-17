@@ -1,0 +1,37 @@
+{
+  "name": "zutomayo-rss",
+  "homepage": "https://github.com/ohakutsu/zutomayo-rss",
+  "license": "MIT",
+  "author": {
+    "name": "ohakutsu",
+    "url": "https://twitter.com/ohakutsu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohakutsu/zutomayo-rss.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "generate": "mkdir -p feed && node dist/main.mjs",
+    "lint:fix": "run-s prettier:fix",
+    "lint": "run-p prettier:check typecheck",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "feed": "^4.2.2",
+    "jsdom": "^20.0.0",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^20.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "private": true
+}
