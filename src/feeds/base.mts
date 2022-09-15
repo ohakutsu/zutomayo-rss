@@ -1,3 +1,4 @@
+import type { FeedOptions } from "feed";
 import { Feed } from "feed";
 
 export interface FeedItem {
@@ -12,6 +13,10 @@ export interface FeedAttributes {
   items: FeedItem[];
   link: string;
   title: string;
+}
+
+interface FeedGenerateOptions {
+  atomSelfLink?: string;
 }
 
 export abstract class FeedBase {
@@ -30,14 +35,24 @@ export abstract class FeedBase {
     this.title = title;
   }
 
-  toRss(): string {
-    const feed = new Feed({
+  toRss(options?: FeedGenerateOptions): string {
+    const feedOptions: FeedOptions = {
       copyright: this.copyright,
       id: this.link,
       link: this.link,
       title: this.title,
       updated: new Date(this.latestFeedItemDate()),
-    });
+    };
+
+    // `atom:link` with `rel="self"`
+    // https://validator.w3.org/feed/docs/warning/MissingAtomSelfLink.html
+    if (options && options.atomSelfLink) {
+      feedOptions.feedLinks = {
+        rss: options.atomSelfLink,
+      };
+    }
+
+    const feed = new Feed(feedOptions);
 
     this.items.forEach((item) => {
       feed.addItem({
