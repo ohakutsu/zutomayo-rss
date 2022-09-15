@@ -11,7 +11,8 @@
     "url": "https://github.com/ohakutsu/zutomayo-rss.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
     "generate": "mkdir -p feed && node dist/main.mjs",
     "lint:fix": "run-s prettier:fix",
     "lint": "run-p prettier:check typecheck",
