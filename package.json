@@ -13,6 +13,7 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
+    "deploy": "wrangler pages publish feed --project-name zutomayo-rss",
     "generate": "mkdir -p feed && node dist/main.mjs",
     "lint:fix": "run-s prettier:fix",
     "lint": "run-p prettier:check typecheck",
@@ -23,7 +24,8 @@
   "dependencies": {
     "feed": "^4.2.2",
     "jsdom": "^20.0.1",
-    "node-fetch": "^3.2.10"
+    "node-fetch": "^3.2.10",
+    "wrangler": "^2.1.12"
   },
   "devDependencies": {
     "@types/jsdom": "^20.0.0",
