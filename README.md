@@ -1,8 +1,5 @@
 # zutomayo-rss
 
-> **Warning**
-> This repository is still under testing. Operation is not guaranteed.
-
 [![Deploy feed](https://github.com/ohakutsu/zutomayo-rss/actions/workflows/deploy-feed.yml/badge.svg?branch=main)](https://github.com/ohakutsu/zutomayo-rss/actions/workflows/deploy-feed.yml)
 
 [日本語](/README-ja.md) | [English](/README.md)
