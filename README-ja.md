@@ -1,4 +1,4 @@
-# zutomayo-rss
+# zutomayo-rss :hedgehog:
 
 [![Deploy feed](https://github.com/ohakutsu/zutomayo-rss/actions/workflows/deploy-feed.yml/badge.svg?branch=main)](https://github.com/ohakutsu/zutomayo-rss/actions/workflows/deploy-feed.yml)
 
