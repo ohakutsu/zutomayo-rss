@@ -25,7 +25,7 @@
     "feed": "^4.2.2",
     "jsdom": "^20.0.1",
     "node-fetch": "^3.2.10",
-    "wrangler": "^2.1.13"
+    "wrangler": "^2.1.15"
   },
   "devDependencies": {
     "@types/jsdom": "^20.0.0",
