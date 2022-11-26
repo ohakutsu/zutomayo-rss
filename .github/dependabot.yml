@@ -3,8 +3,12 @@ updates:
   - directory: /
     open-pull-requests-limit: 5
     package-ecosystem: npm
-    reviewers:
-      - ohakutsu
+    schedule:
+      day: friday
+      interval: weekly
+  - directory: /
+    open-pull-requests-limit: 5
+    package-ecosystem: github-actions
     schedule:
       day: friday
       interval: weekly
