@@ -48,3 +48,30 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v1
         id: deployment
+      - uses: slackapi/slack-github-action@v1.23.0
+        if: ${{ failure() }}
+        with:
+          channel-id: ${{ secrets.SLACK_CHANNEL_IDS }}
+          payload: |
+            {
+              "attachments": [
+                {
+                  "pretext": "Failed deploy workflow",
+                  "color": "#d00000",
+                  "fields": [
+                    {
+                      "title": "Repository",
+                      "value": "<${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>",
+                      "short": false
+                    },
+                    {
+                      "title": "Failed job",
+                      "value": "<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|${{ github.run_id }}>",
+                      "short": false
+                    }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
