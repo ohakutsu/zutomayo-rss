@@ -9,9 +9,10 @@ You can subscribe by setting the following URL in your RSS reader.
 
 ## RSS Feed
 
-|                Name                |                   RSS Feed URL                   |
-| :--------------------------------: | :----------------------------------------------: |
-| [News](https://zutomayo.net/news/) | https://ohakutsu.github.io/zutomayo-rss/news.xml |
+|                 Name                 |                   RSS Feed URL                    |
+| :----------------------------------: | :-----------------------------------------------: |
+|  [News](https://zutomayo.net/news/)  | https://ohakutsu.github.io/zutomayo-rss/news.xml  |
+| [Voice](https://zutomayo.net/voice/) | https://ohakutsu.github.io/zutomayo-rss/voice.xml |
 
 ## License
 
