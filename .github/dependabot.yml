@@ -12,3 +12,10 @@ updates:
     schedule:
       day: friday
       interval: weekly
+  - directory: /.github/actions/failed-notification
+    open-pull-requests-limit: 5
+    package-ecosystem: github-actions
+    rebase-strategy: auto
+    schedule:
+      day: friday
+      interval: weekly

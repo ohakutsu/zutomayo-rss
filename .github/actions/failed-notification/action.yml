@@ -1,0 +1,40 @@
+name: Failed Notification
+description: 'Send "failed" message to slack'
+inputs:
+  slack_bot_token:
+    description: "Slack Bot token"
+    required: true
+  slack_channel_ids:
+    description: "Slack channel IDs"
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: slackapi/slack-github-action@v1.23.0
+      with:
+        channel-id: ${{ inputs.slack_channel_ids }}
+        payload: |
+          {
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "plain_text",
+                  "text": ":x: Workflow failed",
+                  "emoji": true
+                }
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": ">*<${{ env.GITHUB_REPOSITORY_URL }}|${{ github.repository }}>*\n>*Job*\n><${{ env.GITHUB_ACTIONS_JOB_URL }}|${{ github.run_id }}>"
+                }
+              }
+            ],
+            "text": "Workflow failed\nRepository: ${{ env.GITHUB_REPOSITORY_URL }}\nJob: ${{ env.GITHUB_ACTIONS_JOB_URL }}"
+          }
+      env:
+        SLACK_BOT_TOKEN: ${{ inputs.slack_bot_token }}
+        GITHUB_REPOSITORY_URL: ${{ github.server_url}}/${{ github.repository }}
+        GITHUB_ACTIONS_JOB_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
