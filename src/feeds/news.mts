@@ -14,32 +14,38 @@ export class NewsFeed extends FeedBase {
 
     const virtualConsole = new VirtualConsole();
     const dom = new JSDOM(html, { virtualConsole });
-    const elements = dom.window.document.querySelectorAll(
-      ".ztmy-pcmove-news-list a"
-    );
+    const elements = dom.window.document.querySelectorAll(".ztmy-detail-list");
 
-    const items: FeedItem[] = Array.from(elements).map((element) => {
-      if (!isAnchorElement(element)) {
-        throw new Error("Element is not anchor");
-      }
+    const items: FeedItem[] = Array.from(elements)
+      .map((element) => {
+        const head = element.querySelector(".ztmy-topics-head");
+        const title = head!.querySelector("h3")!.textContent!;
+        const [, year, month, day] = head!
+          .querySelector("p")!
+          .textContent!.match(/\[(\d{4})\.(\d{2})\.(\d{2})\]/)!;
 
-      const link = new URL(element.href, BASE_URL).toString();
-      const title = element.querySelector("p")!.textContent!;
-      const [, year, month, day] = element
-        .querySelector("time")!
-        .textContent!.match(/\[(\d{4})\.(\d{2})\.(\d{2})\]/)!;
+        const anchor = element.querySelector("a")!;
+        if (!isAnchorElement(anchor)) {
+          throw new Error("Element is not anchor");
+        }
+        const link = new URL(anchor.href, BASE_URL).toString();
 
-      const date = new Date(
-        Date.UTC(parseInt(year, 10), parseInt(month, 10) - 1, parseInt(day, 10))
-      );
-      date.setUTCHours(date.getUTCHours() - 9); // JST to UTC
+        const date = new Date(
+          Date.UTC(
+            parseInt(year, 10),
+            parseInt(month, 10) - 1,
+            parseInt(day, 10)
+          )
+        );
+        date.setUTCHours(date.getUTCHours() - 9); // JST to UTC
 
-      return {
-        date: date.getTime(),
-        link,
-        title,
-      };
-    });
+        return {
+          date: date.getTime(),
+          link,
+          title,
+        };
+      })
+      .slice(0, 20);
 
     return new NewsFeed({
       copyright: "zutomayo",
