@@ -14,8 +14,8 @@
     "build": "tsc --build",
     "clean": "tsc --build --clean",
     "generate": "mkdir -p feed && node dist/main.mjs",
-    "lint:fix": "run-s prettier:fix",
-    "lint": "run-p prettier:check typecheck",
+    "lint:fix": "npm run prettier:fix",
+    "lint": "concurrently 'npm:prettier:check' 'npm:typecheck'",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write --cache .",
     "typecheck": "tsc --noEmit"
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.1",
+    "concurrently": "^8.2.0",
     "prettier": "^2.8.8",
     "typescript": "^5.1.3"
   },
