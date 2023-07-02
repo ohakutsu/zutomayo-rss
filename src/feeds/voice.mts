@@ -44,11 +44,11 @@ export class VoiceFeed extends FeedBase {
     });
 
     return new VoiceFeed({
-      copyright: "zutomayo",
+      copyright: "ZUTOMAYO",
       id: "voice",
       items,
       link: VOICE_URL,
-      title: "Zutomayo Voice",
+      title: "ZUTOMAYO Voice",
     });
   }
 }

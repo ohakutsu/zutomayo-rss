@@ -4,7 +4,7 @@
 
 [日本語](/README-ja.md) | [English](/README.md)
 
-[Zutomayo](https://zutomayo.net/)'s unofficial RSS feed.
+[ZUTOMAYO](https://zutomayo.net/)'s unofficial RSS feed.
 You can subscribe by setting the following URL in your RSS reader.
 
 ## RSS Feed

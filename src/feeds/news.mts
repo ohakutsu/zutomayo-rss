@@ -48,11 +48,11 @@ export class NewsFeed extends FeedBase {
       .slice(0, 20);
 
     return new NewsFeed({
-      copyright: "zutomayo",
+      copyright: "ZUTOMAYO",
       id: "news",
       items,
       link: NEWS_URL,
-      title: "Zutomayo News",
+      title: "ZUTOMAYO News",
     });
   }
 }
