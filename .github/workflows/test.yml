@@ -27,9 +27,8 @@ jobs:
           cache: pnpm
           node-version-file: ".node-version"
       - run: pnpm install --frozen-lockfile
-      - name: Lint
-        run: pnpm run lint
-      - name: Build
-        run: pnpm run build
-      - name: Generate feed
-        run: pnpm run generate
+
+      - run: pnpm run lint
+      - run: pnpm run build
+      - run: pnpm run test
+      - run: pnpm run generate
