@@ -34,8 +34,8 @@ export class NewsFeed extends FeedBase {
           Date.UTC(
             parseInt(year, 10),
             parseInt(month, 10) - 1,
-            parseInt(day, 10)
-          )
+            parseInt(day, 10),
+          ),
         );
         date.setUTCHours(date.getUTCHours() - 9); // JST to UTC
 

@@ -21,7 +21,11 @@ export class VoiceFeed extends FeedBase {
         .querySelector(".ztmy-date")!
         .textContent!.match(/(\d{4})\.(\d{2})\.(\d{2})/)!;
       const date = new Date(
-        Date.UTC(parseInt(year, 10), parseInt(month, 10) - 1, parseInt(day, 10))
+        Date.UTC(
+          parseInt(year, 10),
+          parseInt(month, 10) - 1,
+          parseInt(day, 10),
+        ),
       );
       date.setUTCHours(date.getUTCHours() - 9); // JST to UTC
 
