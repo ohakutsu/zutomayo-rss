@@ -25,6 +25,9 @@ devDependencies:
   concurrently:
     specifier: ^8.2.0
     version: 8.2.0
+  esmock:
+    specifier: ^2.3.3
+    version: 2.3.3
   prettier:
     specifier: ^3.0.0
     version: 3.0.0
@@ -209,6 +212,11 @@ packages:
   /escalade@3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
+    dev: true
+
+  /esmock@2.3.3:
+    resolution: {integrity: sha512-eUbaWlp+q04KEWIAx+3L37lOS4prMoB06By7zsCaAgR6o45vxc1jt7gRT1X9wJ88wZcECuH6jtu/n66C7nE7iQ==}
+    engines: {node: '>=14.16.0'}
     dev: true
 
   /feed@4.2.2:
