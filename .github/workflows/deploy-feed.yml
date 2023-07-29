@@ -31,7 +31,7 @@ jobs:
         run: pnpm run build
       - name: Generate feed
         run: pnpm run generate
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v2
         with:
           path: "feed"
       - uses: "./.github/actions/failed-notification"
