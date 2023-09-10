@@ -27,7 +27,7 @@
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@types/jsdom": "^21.1.1",
+    "@types/jsdom": "^21.1.2",
     "@types/node": "^18.17.1",
     "concurrently": "^8.2.1",
     "esmock": "^2.3.3",
