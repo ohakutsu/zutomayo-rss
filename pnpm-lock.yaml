@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^21.1.2
     version: 21.1.2
   '@types/node':
-    specifier: ^18.17.15
-    version: 18.17.15
+    specifier: ^20.6.3
+    version: 20.6.3
   concurrently:
     specifier: ^8.2.1
     version: 8.2.1
@@ -59,6 +59,10 @@ packages:
 
   /@types/node@18.17.15:
     resolution: {integrity: sha512-2yrWpBk32tvV/JAd3HNHWuZn/VDN1P+72hWirHnvsvTGSqbANi+kSeuQR9yAHnbvaBvHDsoTdXV0Fe+iRtHLKA==}
+    dev: true
+
+  /@types/node@20.6.3:
+    resolution: {integrity: sha512-HksnYH4Ljr4VQgEy2lTStbCKv/P590tmPe5HqOnv9Gprffgv5WXAY+Y5Gqniu0GGqeTCUdBnzC3QSrzPkBkAMA==}
     dev: true
 
   /@types/tough-cookie@4.0.2:
