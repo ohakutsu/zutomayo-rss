@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "feed": "^4.2.2",
-    "jsdom": "^22.1.0",
+    "jsdom": "^23.0.1",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
