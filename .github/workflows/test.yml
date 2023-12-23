@@ -31,4 +31,3 @@ jobs:
       - run: pnpm run lint
       - run: pnpm run build
       - run: pnpm run test
-      - run: pnpm run generate
