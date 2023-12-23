@@ -13,6 +13,7 @@ export interface FeedAttributes {
   items: FeedItem[];
   link: string;
   title: string;
+  description: string;
 }
 
 interface FeedGenerateOptions {
@@ -25,14 +26,16 @@ export abstract class FeedBase {
   readonly items: FeedItem[];
   readonly link: string;
   readonly title: string;
+  readonly description: string;
 
   constructor(attrs: FeedAttributes) {
-    const { copyright, id, items, link, title } = attrs;
+    const { copyright, id, items, link, title, description } = attrs;
     this.copyright = copyright;
     this.id = id;
     this.items = items;
     this.link = link;
     this.title = title;
+    this.description = description;
   }
 
   toRss(options?: FeedGenerateOptions): string {
@@ -41,6 +44,7 @@ export abstract class FeedBase {
       id: this.link,
       link: this.link,
       title: this.title,
+      description: this.description,
       updated: new Date(this.latestFeedItemDate()),
     };
 

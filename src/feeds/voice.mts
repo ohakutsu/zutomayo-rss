@@ -53,6 +53,7 @@ export class VoiceFeed extends FeedBase {
       items,
       link: VOICE_URL,
       title: "ZUTOMAYO Voice",
+      description: "This is unofficial RSS feed for ZUTOMAYO voice",
     });
   }
 }
