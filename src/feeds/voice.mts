@@ -1,6 +1,6 @@
 import { JSDOM, VirtualConsole } from "jsdom";
-import fetch from "node-fetch";
 import { isAnchorElement } from "../lib/element-type.mjs";
+import { request } from "../lib/request.mjs";
 import type { FeedItem } from "./base.mjs";
 import { FeedBase } from "./base.mjs";
 
@@ -9,7 +9,7 @@ const VOICE_URL = new URL("/voice", BASE_URL).toString();
 
 export class VoiceFeed extends FeedBase {
   static async create() {
-    const response = await fetch(VOICE_URL);
+    const response = await request(VOICE_URL);
     const html = await response.text();
 
     const virtualConsole = new VirtualConsole();

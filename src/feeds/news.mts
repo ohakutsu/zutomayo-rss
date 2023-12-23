@@ -1,6 +1,6 @@
 import { JSDOM, VirtualConsole } from "jsdom";
-import fetch from "node-fetch";
 import { isAnchorElement } from "../lib/element-type.mjs";
+import { request } from "../lib/request.mjs";
 import type { FeedItem } from "./base.mjs";
 import { FeedBase } from "./base.mjs";
 
@@ -9,7 +9,7 @@ const NEWS_URL = new URL("/news", BASE_URL).toString();
 
 export class NewsFeed extends FeedBase {
   static async create() {
-    const response = await fetch(NEWS_URL);
+    const response = await request(NEWS_URL);
     const html = await response.text();
 
     const virtualConsole = new VirtualConsole();

@@ -1,16 +1,16 @@
 import esmock from "esmock";
-import fetch from "node-fetch";
 import assert from "node:assert";
 import { describe, it } from "node:test";
 import { VoiceFeed } from "../../feeds/voice.mjs";
+import { request } from "../../lib/request.mjs";
 import { snapshot } from "../helpers/snapshot.mjs";
 
-const mockFetch = async (url: string) => {
+const mockRequest = async (url: string) => {
   const expectedUrl = "https://zutomayo.net/voice";
   assert.equal(url, expectedUrl);
 
   const body = await snapshot("voice-feed-fetch", async () => {
-    const response = await fetch(expectedUrl);
+    const response = await request(expectedUrl);
     const body = await response.text();
     return body;
   });
@@ -23,15 +23,22 @@ const mockFetch = async (url: string) => {
 };
 
 describe(VoiceFeed.name, () => {
-  it("returns RSS feed", async () => {
-    const { VoiceFeed: MockVoiceFeed } = (await esmock(
+  const getDescribedClass = async () => {
+    const { VoiceFeed: DescribedClass } = (await esmock(
       "../../feeds/voice.mjs",
       {
-        "node-fetch": mockFetch,
+        "../../lib/request.mjs": {
+          request: mockRequest,
+        },
       },
     )) as { VoiceFeed: typeof VoiceFeed };
 
-    const feed = await MockVoiceFeed.create();
+    return DescribedClass;
+  };
+
+  it("returns RSS feed", async () => {
+    const DescribedClass = await getDescribedClass();
+    const feed = await DescribedClass.create();
     const xml = feed.toRss();
     const expected = await snapshot("voice-feed-to-rss", async () => {
       return xml;
@@ -42,14 +49,8 @@ describe(VoiceFeed.name, () => {
 
   describe("with atomSelfLink option", () => {
     it("returns RSS feed with atomSelfLink", async () => {
-      const { VoiceFeed: MockVoiceFeed } = (await esmock(
-        "../../feeds/voice.mjs",
-        {
-          "node-fetch": mockFetch,
-        },
-      )) as { VoiceFeed: typeof VoiceFeed };
-
-      const feed = await MockVoiceFeed.create();
+      const DescribedClass = await getDescribedClass();
+      const feed = await DescribedClass.create();
       const xml = feed.toRss({
         atomSelfLink: "https://example.com",
       });
