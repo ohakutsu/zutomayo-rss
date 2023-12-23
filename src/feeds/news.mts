@@ -53,6 +53,7 @@ export class NewsFeed extends FeedBase {
       items,
       link: NEWS_URL,
       title: "ZUTOMAYO News",
+      description: "This is unofficial RSS feed for ZUTOMAYO news",
     });
   }
 }
