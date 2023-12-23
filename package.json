@@ -18,7 +18,7 @@
     "lint": "concurrently -n 'prettier,typecheck' 'pnpm run prettier:check' 'pnpm run typecheck'",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write --cache .",
-    "test": "pnpm run build && node --test --experimental-loader esmock",
+    "test": "pnpm run build && node --test",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -28,14 +28,14 @@
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.6",
-    "@types/node": "^18.19.3",
+    "@types/node": "^20.10.5",
     "concurrently": "^8.2.2",
     "esmock": "^2.6.0",
     "prettier": "^3.1.1",
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": "18.x",
+    "node": "20.x",
     "pnpm": "8.x"
   },
   "packageManager": "pnpm@8.12.1",
