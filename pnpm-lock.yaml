@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^8.2.2
     version: 8.2.2
   esmock:
-    specifier: ^2.6.2
-    version: 2.6.2
+    specifier: ^2.6.3
+    version: 2.6.3
   prettier:
     specifier: ^3.2.2
     version: 3.2.2
@@ -216,8 +216,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /esmock@2.6.2:
-    resolution: {integrity: sha512-tcxyxE6l0TmyEwkybbVKqFwUpsWBrjVWXYiVc8PPnKC7q9RRYyRtK03z7MXaZimRAsLkEp7SQeHCQEnrD6z4Ww==}
+  /esmock@2.6.3:
+    resolution: {integrity: sha512-1gtVLLHyB742JNWkIFfiKwB8rXgJZO/X717ua4yzT0hIqsDFjtnrpAKHO+HlIMSIhMExCWJzpk9lDsh2XuKAKw==}
     engines: {node: '>=14.16.0'}
     dev: true
 
