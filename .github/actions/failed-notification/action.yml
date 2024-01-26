@@ -10,7 +10,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: slackapi/slack-github-action@v1.24.0
+    - uses: slackapi/slack-github-action@v1.25.0
       with:
         channel-id: ${{ inputs.slack_channel_ids }}
         payload: |
