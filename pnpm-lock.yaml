@@ -29,7 +29,7 @@ devDependencies:
     specifier: ^2.6.3
     version: 2.6.3
   prettier:
-    specifier: ^3.2.4
+    specifier: ^3.2.5
     version: 3.2.5
   typescript:
     specifier: ^5.3.3

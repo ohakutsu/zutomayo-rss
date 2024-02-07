@@ -31,7 +31,7 @@
     "@types/node": "^20.11.16",
     "concurrently": "^8.2.2",
     "esmock": "^2.6.3",
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "typescript": "^5.3.3"
   },
   "engines": {
