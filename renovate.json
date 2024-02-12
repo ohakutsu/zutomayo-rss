@@ -8,5 +8,14 @@
     ":label(dependencies)",
     "npm:unpublishSafe"
   ],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "groupName": "github pages",
+      "matchPackageNames": [
+        "actions/deploy-pages",
+        "actions/upload-pages-artifact"
+      ]
+    }
+  ]
 }
