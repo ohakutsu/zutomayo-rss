@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.14.0",
     "concurrently": "^8.2.2",
     "esmock": "^2.6.5",
     "prettier": "^3.2.5",
