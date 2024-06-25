@@ -20,7 +20,7 @@ devDependencies:
     specifier: ^21.1.7
     version: 21.1.7
   '@types/node':
-    specifier: ^20.14.7
+    specifier: ^20.14.8
     version: 20.14.8
   concurrently:
     specifier: ^8.2.2
