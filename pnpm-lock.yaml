@@ -31,7 +31,7 @@ importers:
         specifier: ^9.0.1
         version: 9.0.1
       esmock:
-        specifier: ^2.6.8
+        specifier: ^2.6.9
         version: 2.6.9
       prettier:
         specifier: ^3.3.3
