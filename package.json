@@ -36,9 +36,9 @@
   },
   "engines": {
     "node": "20.18.0",
-    "pnpm": "9.15.1"
+    "pnpm": "9.15.2"
   },
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@9.15.2",
   "private": true,
   "pnpm": {
     "overrides": {
