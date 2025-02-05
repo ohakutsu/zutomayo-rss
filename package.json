@@ -36,9 +36,9 @@
   },
   "engines": {
     "node": "20.18.2",
-    "pnpm": "9.15.4"
+    "pnpm": "9.15.5"
   },
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@9.15.5",
   "private": true,
   "pnpm": {
     "overrides": {
