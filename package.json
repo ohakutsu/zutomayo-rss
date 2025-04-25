@@ -28,14 +28,14 @@
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^20.17.24",
+    "@types/node": "^20.17.30",
     "concurrently": "^9.1.2",
     "esmock": "^2.7.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   },
   "engines": {
-    "node": "20.18.3",
+    "node": "20.19.1",
     "pnpm": "9.15.9"
   },
   "packageManager": "pnpm@9.15.9",
