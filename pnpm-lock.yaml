@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       feed:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^5.0.1
+        version: 5.0.1
       jsdom:
         specifier: ^26.1.0
         version: 26.1.0
@@ -161,9 +161,9 @@ packages:
     resolution: {integrity: sha512-nYSvky0rP//13eYIGJ7b1dhsaBxtS370UoDWbILo1jHlO4hrCUkp/LD3e54QVhySxAGLsufxi5A4+wUAxPUIrg==}
     engines: {node: '>=14.16.0'}
 
-  feed@4.2.2:
-    resolution: {integrity: sha512-u5/sxGfiMfZNtJ3OvQpXcvotFpYkL0n9u9mM2vkui2nGo8b4wvDkJ8gAkYqbA8QpGyFCv3RK0Z+Iv+9veCS9bQ==}
-    engines: {node: '>=0.4.0'}
+  feed@5.0.1:
+    resolution: {integrity: sha512-kOveKLHucVZ6RI91bdWAts9O0L1N2mGzRGVCDQPRnHh4HmgqLdN66Cp/5dMeJZGn/qnBslWliwX37FEBq8DCIA==}
+    engines: {node: '>=20', pnpm: '>=10'}
 
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
@@ -495,7 +495,7 @@ snapshots:
 
   esmock@2.7.0: {}
 
-  feed@4.2.2:
+  feed@5.0.1:
     dependencies:
       xml-js: 1.6.11
 
