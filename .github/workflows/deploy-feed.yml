@@ -20,29 +20,9 @@ defaults:
     shell: bash
 
 jobs:
-  # Stop updating RSS feed and do not request zutomayo.net during maintenance on 2025/02/25
-  # Ref: https://zutomayo.net/news/maintenance/
-  check-maintenance:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    outputs:
-      under_maintenance: ${{ steps.check.outputs.under_maintenance }}
-    steps:
-      - id: check
-        run: |
-          current_time=$(TZ='Asia/Tokyo' date '+%Y-%m-%d')
-          if [ "${current_time}" == '2025-02-25' ]; then
-            echo 'under_maintenance=true' >> "${GITHUB_OUTPUT}"
-          else
-            echo 'under_maintenance=false' >> "${GITHUB_OUTPUT}"
-          fi
-
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    needs:
-      - check-maintenance
-    if: ${{ needs.check-maintenance.outputs.under_maintenance == 'false' }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
