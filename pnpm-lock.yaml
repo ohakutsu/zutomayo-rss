@@ -25,7 +25,7 @@ importers:
         specifier: ^21.1.7
         version: 21.1.7
       '@types/node':
-        specifier: ^22.15.24
+        specifier: ^22.15.26
         version: 22.15.29
       concurrently:
         specifier: ^9.1.2
