@@ -31,8 +31,8 @@ importers:
         specifier: ^9.2.1
         version: 9.2.1
       esmock:
-        specifier: ^2.7.2
-        version: 2.7.2
+        specifier: ^2.7.3
+        version: 2.7.3
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -157,8 +157,8 @@ packages:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
 
-  esmock@2.7.2:
-    resolution: {integrity: sha512-/ilhkWbW4FXgQpRbS0LZpKG1AFkiFZkmapP/868Lqa4hSKgKVtMilFXlQrIMssLzyvpeDVg2Q9L3VInnqYoTAg==}
+  esmock@2.7.3:
+    resolution: {integrity: sha512-/M/YZOjgyLaVoY6K83pwCsGE1AJQnj4S4GyXLYgi/Y79KL8EeW6WU7Rmjc89UO7jv6ec8+j34rKeWOfiLeEu0A==}
     engines: {node: '>=14.16.0'}
 
   feed@5.0.1:
@@ -490,7 +490,7 @@ snapshots:
 
   escalade@3.1.1: {}
 
-  esmock@2.7.2: {}
+  esmock@2.7.3: {}
 
   feed@5.0.1:
     dependencies:
