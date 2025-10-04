@@ -32,7 +32,7 @@
     "concurrently": "^9.2.1",
     "esmock": "^2.7.3",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": "22.17.1",
