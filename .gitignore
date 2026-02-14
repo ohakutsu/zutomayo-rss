@@ -1,3 +1,4 @@
+*.tsbuildinfo
 .DS_Store
 dist
 feed
