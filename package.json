@@ -18,7 +18,7 @@
     "lint": "concurrently -n 'prettier,typecheck' 'pnpm run prettier:check' 'pnpm run typecheck'",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write --cache .",
-    "test": "pnpm run build && node --test",
+    "test": "pnpm run build && node --test '**/*.test.mjs'",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
