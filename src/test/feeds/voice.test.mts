@@ -1,3 +1,4 @@
+import { Response } from "node-fetch";
 import { describe, expect, it, vi } from "vitest";
 import { VoiceFeed } from "../../feeds/voice.mjs";
 import { snapshot } from "../helpers/snapshot.mjs";
