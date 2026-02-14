@@ -1,1 +1,55 @@
-"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n    <channel>\n        <title>ZUTOMAYO Voice</title>\n        <link>https://zutomayo.net/voice</link>\n        <description>This is unofficial RSS feed for ZUTOMAYO voice</description>\n        <lastBuildDate>Sat, 31 Jan 2026 15:00:00 GMT</lastBuildDate>\n        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>\n        <generator>https://github.com/jpmonette/feed</generator>\n        <copyright>ZUTOMAYO</copyright>\n        <atom:link href=\"https://example.com\" rel=\"self\" type=\"application/rss+xml\"/>\n        <item>\n            <title><![CDATA[medianoche ~]]></title>\n            <link>https://zutomayo.net/voice/medianoche</link>\n            <guid isPermaLink=\"true\">https://zutomayo.net/voice/medianoche</guid>\n            <pubDate>Sat, 31 Jan 2026 15:00:00 GMT</pubDate>\n        </item>\n        <item>\n            <title><![CDATA[2026お雑煮]]></title>\n            <link>https://zutomayo.net/voice/2026ozouni</link>\n            <guid isPermaLink=\"true\">https://zutomayo.net/voice/2026ozouni</guid>\n            <pubDate>Wed, 31 Dec 2025 15:00:00 GMT</pubDate>\n        </item>\n        <item>\n            <title><![CDATA[これは何の音でしょう]]></title>\n            <link>https://zutomayo.net/voice/korehananooto</link>\n            <guid isPermaLink=\"true\">https://zutomayo.net/voice/korehananooto</guid>\n            <pubDate>Sun, 30 Nov 2025 15:00:00 GMT</pubDate>\n        </item>\n        <item>\n            <title><![CDATA[ハロウィンREC]]></title>\n            <link>https://zutomayo.net/voice/halloweenrec</link>\n            <guid isPermaLink=\"true\">https://zutomayo.net/voice/halloweenrec</guid>\n            <pubDate>Fri, 31 Oct 2025 15:00:00 GMT</pubDate>\n        </item>\n        <item>\n            <title><![CDATA[最近読んでる漫画(車で小声)]]></title>\n            <link>https://zutomayo.net/voice/manga</link>\n            <guid isPermaLink=\"true\">https://zutomayo.net/voice/manga</guid>\n            <pubDate>Tue, 30 Sep 2025 15:00:00 GMT</pubDate>\n        </item>\n        <item>\n            <title><![CDATA[ずっと真夜中でいいのに。由来]]></title>\n            <link>https://zutomayo.net/voice/yurai</link>\n            <guid isPermaLink=\"true\">https://zutomayo.net/voice/yurai</guid>\n            <pubDate>Sun, 31 Aug 2025 15:00:00 GMT</pubDate>\n        </item>\n        <item>\n            <title><![CDATA[プレミアムありがとう]]></title>\n            <link>https://zutomayo.net/voice/premium</link>\n            <guid isPermaLink=\"true\">https://zutomayo.net/voice/premium</guid>\n            <pubDate>Fri, 07 Jan 2022 15:00:00 GMT</pubDate>\n        </item>\n    </channel>\n</rss>"
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>ZUTOMAYO Voice</title>
+        <link>https://zutomayo.net/voice</link>
+        <description>This is unofficial RSS feed for ZUTOMAYO voice</description>
+        <lastBuildDate>Sat, 31 Jan 2026 15:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <copyright>ZUTOMAYO</copyright>
+        <atom:link href="https://example.com" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[medianoche ~]]></title>
+            <link>https://zutomayo.net/voice/medianoche</link>
+            <guid isPermaLink="true">https://zutomayo.net/voice/medianoche</guid>
+            <pubDate>Sat, 31 Jan 2026 15:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[2026お雑煮]]></title>
+            <link>https://zutomayo.net/voice/2026ozouni</link>
+            <guid isPermaLink="true">https://zutomayo.net/voice/2026ozouni</guid>
+            <pubDate>Wed, 31 Dec 2025 15:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[これは何の音でしょう]]></title>
+            <link>https://zutomayo.net/voice/korehananooto</link>
+            <guid isPermaLink="true">https://zutomayo.net/voice/korehananooto</guid>
+            <pubDate>Sun, 30 Nov 2025 15:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ハロウィンREC]]></title>
+            <link>https://zutomayo.net/voice/halloweenrec</link>
+            <guid isPermaLink="true">https://zutomayo.net/voice/halloweenrec</guid>
+            <pubDate>Fri, 31 Oct 2025 15:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[最近読んでる漫画(車で小声)]]></title>
+            <link>https://zutomayo.net/voice/manga</link>
+            <guid isPermaLink="true">https://zutomayo.net/voice/manga</guid>
+            <pubDate>Tue, 30 Sep 2025 15:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ずっと真夜中でいいのに。由来]]></title>
+            <link>https://zutomayo.net/voice/yurai</link>
+            <guid isPermaLink="true">https://zutomayo.net/voice/yurai</guid>
+            <pubDate>Sun, 31 Aug 2025 15:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[プレミアムありがとう]]></title>
+            <link>https://zutomayo.net/voice/premium</link>
+            <guid isPermaLink="true">https://zutomayo.net/voice/premium</guid>
+            <pubDate>Fri, 07 Jan 2022 15:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -18,7 +18,7 @@
     "lint": "concurrently -n 'prettier,typecheck' 'pnpm run prettier:check' 'pnpm run typecheck'",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write --cache .",
-    "test": "pnpm run build && node --test '**/*.test.mjs'",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -30,9 +30,9 @@
     "@types/jsdom": "^27.0.0",
     "@types/node": "^24.10.13",
     "concurrently": "^9.2.1",
-    "esmock": "^2.7.3",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   },
   "engines": {
     "node": "24.13.1",

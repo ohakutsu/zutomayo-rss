@@ -25,7 +25,7 @@ export const snapshot = async <T,>(
 };
 
 const snapshotResolver = (key: string) => {
-  const testDirPath = path.resolve(__dirname, "..").replace("dist/", "src/");
+  const testDirPath = path.resolve(__dirname, "..");
   const snapshotDirPath = path.resolve(testDirPath, "__snapshots__");
 
   const snapshotFilePath = path.resolve(snapshotDirPath, `${key}.snap`);
