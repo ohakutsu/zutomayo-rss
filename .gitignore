@@ -1,5 +1,6 @@
 *.tsbuildinfo
 .DS_Store
+.pnpm-store
 dist
 feed
 node_modules
