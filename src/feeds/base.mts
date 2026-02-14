@@ -61,7 +61,6 @@ export abstract class FeedBase {
     this.items.forEach((item) => {
       feed.addItem({
         date: new Date(item.date),
-        id: item.link,
         link: item.link,
         title: item.title,
       });
