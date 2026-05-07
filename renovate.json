@@ -6,7 +6,7 @@
     ":prHourlyLimit4",
     ":timezone(Asia/Tokyo)",
     ":label(dependencies)",
-    "npm:unpublishSafe"
+    "security:minimumReleaseAgeNpm"
   ],
   "rangeStrategy": "bump",
   "packageRules": [
