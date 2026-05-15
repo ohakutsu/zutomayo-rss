@@ -22,7 +22,7 @@ importers:
         version: 3.3.2
     devDependencies:
       '@types/jsdom':
-        specifier: ^28.0.2
+        specifier: ^28.0.3
         version: 28.0.3
       '@types/node':
         specifier: ^24.12.4
