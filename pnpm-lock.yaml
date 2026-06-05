@@ -28,7 +28,7 @@ importers:
         specifier: ^24.12.4
         version: 24.12.4
       concurrently:
-        specifier: ^10.0.1
+        specifier: ^10.0.3
         version: 10.0.3
       prettier:
         specifier: ^3.8.3
