@@ -30,7 +30,7 @@
     "@types/jsdom": "^28.0.3",
     "@types/node": "^24.13.1",
     "concurrently": "^10.0.3",
-    "prettier": "^3.8.3",
+    "prettier": "^3.8.4",
     "typescript": "^6.0.3",
     "vitest": "^4.1.8"
   },
