@@ -31,7 +31,7 @@ importers:
         specifier: ^10.0.3
         version: 10.0.3
       prettier:
-        specifier: ^3.8.5
+        specifier: ^3.9.0
         version: 3.9.3
       typescript:
         specifier: ^6.0.3
