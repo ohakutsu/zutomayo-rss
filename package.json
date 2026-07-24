@@ -22,7 +22,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "feed": "^5.2.1",
+    "feed": "^6.0.0",
     "jsdom": "^29.1.1",
     "node-fetch": "^3.3.2"
   },
