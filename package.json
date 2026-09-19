@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/jsdom": "^30.0.0",
-    "@types/node": "^24.13.4",
+    "@types/node": "^24.13.5",
     "concurrently": "^10.0.5",
     "prettier": "^3.9.6",
     "typescript": "^7.0.2",
